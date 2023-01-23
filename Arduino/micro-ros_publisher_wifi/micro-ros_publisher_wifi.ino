@@ -1,3 +1,5 @@
+//use docker run -it --rm --net=host microros/micro-ros-agent:foxy udp4 --port 8888 -v6 
+//in a terminal to start the conection to the host pc
 #include <micro_ros_arduino.h>
 
 #include <stdio.h>

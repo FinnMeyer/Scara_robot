@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<launch>
+    <node pkg="kinematics" type="kinematics_node" name="kinematics" output="screen">
+        <param name="l"   value="0.192" type="double" />
+        <param name="w"   value="0.169" type="double" />
+        <param name="R"   value="0.068" type="double" />
+        <param name="N"   value="38.0" type="double" />
+        <param name="ticks"   value="true" type="bool" />
+    </node>
+    <node pkg="solver" type="solver_node" name="solver" output="screen">
+        <param name="x"   value="0.0081596244126" type="double" /> <!-- bag1: x 0.0081596244126= bag2: x = 0.0236993450671 bag3: x = 0.00560144847259-->
+        <param name="y"   value="0.003059721319" type="double" /> <!-- bag1: y = 0.003059721319 bag2: y = 0.00355394813232 bag3: y = 0.0397560708225-->
+        <param name="yaw"   value="-0.0451098" type="double" /> <!-- bag1: yaw = -0.0451098 bag2: yaw = -0.0197909 bag3: yaw = -0.0081103-->
+        <param name="euler"   value="true" type="bool" />
+    </node>
+</launch>
